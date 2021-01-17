@@ -1,1 +1,63 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        P. Friedrich
+    </title>
+</head>
+
+<body>
+    <div class="head">
+        <h1> Welcome!</h1>
+    </div>
+    <div class="subhead">
+      <h3> My name is Philipp Friedrich and here are some of my favourite projects so far... </h3>
+    </div>
+    <!-- Pointcloud -->
+
+    <div class="parent">
+        <img class="image1" src="imgs/pointcloud_bg.png" />
+        <img class="image2"src="imgs/pointcloud_fg.png" />
+    </div>
+    <div class="spacer"> </div>
+
+
+    <div class="parent">
+        <img id="flipped" class="image1" src="imgs/pointcloud_bg.png" />
+        <img id="flipped" class="image3"src="imgs/pointcloud_fg.png" />
+    </div>
+    <div class="spacer"> </div>
+
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <!-- Script to change opacity when scrolling the web page -->
+    <script>
+            $(document).ready(function(){
+            $(window).scroll(function() {
+              var scrollTop = $(this).scrollTop();
+
+              $('.image2').css({
+                opacity: function() {
+                  var elementTop = $(this).offset().top;
+                  var elementHeight = $(this).height();
+                  return 1 - (elementHeight - scrollTop) / elementHeight;
+                }
+              });
+
+              $('.image3').css({
+                opacity: function() {
+                  var elementTop = $(this).offset().top;
+                  var elementHeight = $(this).height();
+                  return 1.2 - (elementHeight + elementTop - scrollTop) / elementHeight;
+                }
+              });
+            });
+        });
+    </script>
+</body>
+
+</html>

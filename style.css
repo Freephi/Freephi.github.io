@@ -1,0 +1,54 @@
+/* Margin and Padding is set to zero so the body can occupy the full screen page */
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+#flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+.subhead {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.spacer {
+  min-height: 150px;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+  }
+  .image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+  }
