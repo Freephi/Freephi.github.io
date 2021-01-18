@@ -50,12 +50,20 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 1.0;
+  }
+
+  .image4 {
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0.0;
   }
+
   .textbox_left {
     position: absolute;
     text-align: justify;
-    top: 20%;
+    top: 5%;
     left: 2.5%;
     max-width: 40%;
     max-height: 50%;
@@ -63,7 +71,7 @@ img {
   .textbox_right {
     position: absolute;
     text-align: justify;
-    top: 20%;
+    top: 5%;
     right: 2.5%;
     max-width: 40%;
     max-height: 50%;
@@ -71,4 +79,19 @@ img {
 
   .textbox_right h3 {
     text-align: right;
+  }
+
+
+
+  @media screen and (max-width: 1075px){
+    .textbox_left {
+      position: relative;
+      max-width: 80%;
+      left: 10%;
+    }
+    .textbox_right {
+      position: relative;
+      max-width: 80%;
+      left: 10%;
+    }
   }
