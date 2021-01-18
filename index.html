@@ -29,10 +29,19 @@
 
 
     <div class="parent">
-        <img id="flipped" class="image1" src="imgs/pointcloud_bg.png" />
-        <img id="flipped" class="image3"src="imgs/pointcloud_fg.png" />
+        <img class="image1" src="imgs/mapvalidation_bg.png" />
+        <img class="image3"src="imgs/mapvalidation_fg.png" />
         <div class="textbox_right">
             <h3> Object detection on fused data </h3>
+            <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </div>
+    </div>
+
+    <div id="sec3" class="parent">
+        <img class="image1" src="imgs/opticalflow-bg.png" />
+        <img class="image4"src="imgs/opticalflow-fg.png" />
+        <div class="textbox_left">
+            <h3> Optical flow </h3>
             <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
         </div>
     </div>
@@ -60,7 +69,15 @@
                 opacity: function() {
                   var elementTop = $(this).offset().top;
                   var elementHeight = $(this).height();
-                  return 1.2 - (elementHeight + elementTop - scrollTop) / elementHeight;
+                  return -0.3 + (elementHeight + elementTop - scrollTop) / elementHeight;
+                }
+              });
+
+              $('.image4').css({
+                opacity: function() {
+                  var elementTop = $(this).offset().top;
+                  var elementHeight = $(this).height();
+                  return 1.3 - (elementHeight + elementTop - scrollTop) / elementHeight;
                 }
               });
             });
