@@ -4,6 +4,5 @@ https://www.cleanpng.com/png-3d-modeling-3d-computer-graphics-3dshop-specialist-
 amg 3d model:
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixy.org%2F5976488%2F&psig=AOvVaw1Qq-OtcrEnJfSyxGsWnw1t&ust=1611078141449000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjNi5SEpu4CFQAAAAAdAAAAABAD
 
-
-kitti pointcloud:
-https://raw.githubusercontent.com/kuixu/kitti_object_vis/master/imgs/rgb.png
+veldoyne:
+https://i2.wp.com/metrology.news/wp-content/uploads/2018/12/Nikon-Invests-in-Lidar.png?fit=1600%2C900&ssl=1
