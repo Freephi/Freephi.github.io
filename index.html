@@ -4,12 +4,19 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>
-        P. Friedrich
+        Philipp Friedrich
     </title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="navi">
+      <ul>
+        <li><a href="#ME">ME</a></li>
+        <li><a href="#PROJECTS">PROJECTS</a></li>
+        <li><a href="#DETAILS">DETAILS</a></li>
+      </ul>
+    </div>
+    <div id="ME" class="wrapper">
     <div class="wrapped_left">
         <img class="profile" src="imgs/profile_picture.png" />
     </div>
@@ -23,13 +30,13 @@
           the development of <b>autonomous systems</b>. I enjoy coding,
           especially in <b>Python</b>, and working on new
           innovative projects. Below you  will find a selection of some of
-          my favorite projects I've done so far.
+          my favorite projects I've done so far. Please feel free to <a href="mailto:philifriedrich@hotmail.de" style="font-weight:bold; text-decoration:none; font-style:normal;">contact me</a> if you want to know more about me!
         </p>
     </div>
   </div>
     <!-- Pointcloud -->
 
-    <div class="parent">
+    <div id="PROJECTS" class="parent">
         <img class="image1" src="imgs/pointcloud_velo_bg.png" />
         <img class="image2"src="imgs/pointcloud_velo_fg.png" />
         <div class="textbox_left">
@@ -57,8 +64,18 @@
             <p> I wrote my bachelor thesis on <i>"Camera-Based Vehicle Detection and Optical Flow Estimation for Real-Time Lane-Change Decision using Deep Learning"</i>, also at BMW in Munich. A new <b>neural network architecture</b> is presented that not only improves the accuracy of <b>object detection</b>, but also enables the estimation of the <b>optical flow</b>. The optical flow describes the <b>relative motion</b> of each pixel within an image. This makes it possible to predict whether a <b>safe lane change</b> will still be possible in the near future.</p>
         </div>
     </div>
-    <div class="spacer"> </div>
+    <div class="more">
+      <h3> More projects are in progress ... </h3>
+    </div>
 
+    <div id="DETAILS" class="footer">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/philipp-friedrich-206364197/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/Freephi" target="_blank">Github</a></li>
+        <li><a href="documents/CV-Friedrich.pdf" target="_blank">CV</a></li>
+        <li><a href="mailto:philifriedrich@hotmail.de">Mail</a></li>
+      </ul>
+    </div>
     <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
