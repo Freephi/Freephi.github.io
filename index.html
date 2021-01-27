@@ -64,7 +64,7 @@
                 opacity: function() {
                   var elementTop = $(this).offset().top;
                   var elementHeight = $(this).height();
-                  return 1 - (elementHeight - scrollTop) / elementHeight;
+                  return 0.5 - (elementHeight - scrollTop) / elementHeight;
                 }
               });
 
