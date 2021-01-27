@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <div class="head">
-        <h1> Welcome!</h1>
+    <div class="wrapper">
+    <div class="wrapped_left">
+        <img class="profile" src="imgs/profile_picture.png" />
     </div>
-    <div class="subhead">
-      <h3> My name is Philipp Friedrich and here are some of my favourite projects so far... </h3>
+    <div class="wrapped_right">
+        <h3> About me - Philipp Friedrich</h3>
+        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
     </div>
+  </div>
     <!-- Pointcloud -->
 
-    <div id="sec1" class="parent">
+    <div class="parent">
         <img class="image1" src="imgs/pointcloud_velo_bg.png" />
         <img class="image2"src="imgs/pointcloud_velo_fg.png" />
         <div class="textbox_left">
@@ -37,7 +40,7 @@
         </div>
     </div>
 
-    <div id="sec3" class="parent">
+    <div class="parent">
         <img class="image1" src="imgs/opticalflow-bg.png" />
         <img class="image4"src="imgs/opticalflow-fg.png" />
         <div class="textbox_left">
@@ -61,7 +64,7 @@
                 opacity: function() {
                   var elementTop = $(this).offset().top;
                   var elementHeight = $(this).height();
-                  return 1 - (elementHeight - scrollTop) / elementHeight;
+                  return 0.5 - (elementHeight - scrollTop) / elementHeight;
                 }
               });
 
